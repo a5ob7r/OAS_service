@@ -12,7 +12,11 @@
         <service
             android:name=".FizzBuzzService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.oas_service.FIZZ_BUZZ_SERVICE_BIND"/>
+            </intent-filter>
+        </service>
 
         <activity android:name=".MainActivity">
             <intent-filter>
